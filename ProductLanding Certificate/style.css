@@ -1,0 +1,91 @@
+/* Reset CSS */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 100px; /* Adjust the width as needed */
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Sections styling */
+section {
+  padding: 50px;
+  margin-top: 80px; /* Adjust the margin as needed */
+  background-color: #fff;
+}
+
+/* Video styling */
+#video {
+  width: 100%;
+  max-width: 800px; /* Adjust the max-width as needed */
+  display: block;
+  margin: auto;
+}
+
+/* Form styling */
+#form {
+  text-align: center;
+  margin-top: 50px; /* Adjust the margin as needed */
+}
+
+#email {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+  }
+}
